@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Brandon Grotesque Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Brandon Grotesque Black'), 
+    url(/css/brandon-grotesque-regular-cufonfonts-webfont/brandon-grotesque-black-58a8a3e824392.woff) format('woff');
+
+}
+
+html {
+    /*1 rem*/
+    font-size: 62.5%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+   margin: 0 auto;
+   display: flex; 
+   width: 1500px;
+   height: 790px;
+   position: relative;
+}
+
+.header__leftBox {
+    width: 50%;
+    background-color: #003170;
+    position: relative;
+}
+
+.nav {
+width: 980px;
+}
+
+.nav__list {
+    display: flex;
+    width: 690px;
+    margin-top: 37px;
+    margin-left: 67px;
+    list-style: none;
+}
+
+.nav li {
+    
+    font-size: 22px;
+    font-family: 'Prata';
+    margin-right: 35px;
+    
+
+
+}
+
+.nav a {
+    color: #20c4bb;
+    font-family: 'Prata', serif;
+    text-decoration: none;
+}
+
+.header__helloBox {
+    width: 684px;
+    height: 422px;
+    position: absolute;
+    top: 314px;
+    left: 67px;
+}
+
+.hLetter {
+width: 362px;
+height: 422px;
+background: url(../assets/h.svg) no-repeat;
+
+}
+
+.header__greeting {
+    font-size: 154px;
+    color: #fff;
+    font-family: 'Prata', serif;
+    position: absolute;
+    top: 182px;
+    left: 209px;
+  
+}
+/*
+hr {
+    border: 2px solid white;
+    width: 449px;
+    margin-top: -40px;
+    
+}*/
+.line {
+    width: 435px;
+    height: 6px;
+    background-color: #fff;
+    position: absolute;
+    top: 350px;
+    left: 209px;
+  
+}
+
+.header__paragraf {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    
+}
+
+.leftParagraf {
+    position: absolute;
+    top: 375px;
+    left: 190px;
+}
+
+.header__middleBox {
+    width: 25%;
+    background-color: #75e3dd;
+    position: relative;
+}
+
+.dLetter {
+   width: 247px;
+   height: 282px;
+   background: url(../assets/d.svg) no-repeat; 
+   position: absolute;
+   top: 459px;
+   left: 52px;
+}
+
+.middleParagraf {
+    position: absolute;
+    top: 700px;
+    left: 32px;
+}
+
+.header__rightBox {
+    width: 25%;
+    background-color: #f4979c;
+    position: relative;
+}
+
+.pLetter {
+    width: 195px;
+    height: 281px;
+    background: url(../assets/p.svg) no-repeat;
+    position: absolute;
+    top: 457px;
+    left: 50px;
+}
+
+.rightParagraf {
+    position: absolute;
+    top: 701px;
+    left: 50px;
+}
+
+.portfolio__grid {
+    
+    display: grid;
+    /*max-width: 992px;*/
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3 auto);
+   
+    
+}
+
+.portfolio h4 {
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    color: #306fbf;
+    text-align: center;
+    margin-top: 42px;
+}
+
+.portfolio__works {
+    grid-area: head;
+    font-family: 'Prata';
+    font-size: 100px;
+    color: #41ccc4;
+}
+
+.portfolio__img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.first-img img {
+    position: relative;
+    align-self: flex-end;
+   
+}
+
+.portfolio__img-caption {
+    width: 262px;
+    height: 36px;
+    padding: 0;
+    margin-left: -80px;
+    transform: rotate(-90deg);
+    background-color: #75e3dd;
+    font-family: 'Prata';
+    font-size: 33px;
+    color: #16736e;
+
+    position: absolute;
+    
+
+}
+
+.portfolio__description h2 {
+    font-family: 'Prata';
+    font-size: 50px;
+    color: #16736e;
+}
+
+.portfolio__description p {
+    font-family: 'Inconsolata';
+    font-size: 18px;
+    color: #16736e;
+}
+
+.portfolio__description h4 {
+    font-family: 'Inconsolata';
+    font-size: 18px;
+    color: #2fdbd2;
+    text-transform: uppercase;
+}
