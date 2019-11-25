@@ -162,16 +162,24 @@ hr {
     left: 50px;
 }
 
-.portfolio__grid {
-    
+.portfolio {
+    width: 996px;
+    margin: 0 auto;
     display: grid;
-    /*max-width: 992px;*/
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3 auto);
-   
-    
+    grid-template-areas: 
+    'heading heading'
+    'firstImg firstDescription'
+    'secondDescription secondImg'
+    'thirdImg thirdDescrioption';
+
+    position: relative;
 }
 
+.heading {
+    grid-area: heading;
+    width: 996px;
+    height: 243px;
+}
 .portfolio h4 {
     font-family: 'Inconsolata', monospace;
     font-size: 18px;
@@ -181,46 +189,23 @@ hr {
 }
 
 .portfolio__works {
-    grid-area: head;
+    margin: 50px;
     font-family: 'Prata';
     font-size: 100px;
+    letter-spacing: 15px;
     color: #41ccc4;
-}
-
-.portfolio__img {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.first-img img {
-    position: relative;
-    align-self: flex-end;
-   
-}
-
-.portfolio__img-caption {
-    width: 262px;
-    height: 36px;
-    padding: 0;
-    margin-left: -80px;
-    transform: rotate(-90deg);
-    background-color: #75e3dd;
-    font-family: 'Prata';
-    font-size: 33px;
-    color: #16736e;
-
-    position: absolute;
-    
-
+    font-weight: 100;
 }
 
 .portfolio__description h2 {
+    margin-left: 50px;
     font-family: 'Prata';
     font-size: 50px;
     color: #16736e;
 }
 
 .portfolio__description p {
+    margin-left: 50px;
     font-family: 'Inconsolata';
     font-size: 18px;
     color: #16736e;
@@ -231,4 +216,32 @@ hr {
     font-size: 18px;
     color: #2fdbd2;
     text-transform: uppercase;
+    
 }
+
+.portfolio__img-caption {
+    width: 282px;
+    height: 36px;
+    padding: 10px;
+    background-color: #75e3dd;
+    margin-left: -80px;
+    transform: rotate(-90deg);
+    font-family: 'Prata';
+    font-size: 33px;
+    color: #16736e;
+    position: absolute;
+    top: 100px;
+    left: -40px;
+}
+
+.first-img {
+    grid-area: firstImg;
+    min-width: 496px;
+    display: flex;
+    justify-content: flex-end;
+
+    position: relative;
+}
+
+
+
